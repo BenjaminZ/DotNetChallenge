@@ -24,7 +24,7 @@ namespace DotNetChallenge.Tests
 
         [Theory]
         [InlineData(123.45, " and forty-five cents")]
-        [InlineData(123.450, " and forty-five cents")]
+        [InlineData(23.450, " and forty-five cents")]
         [InlineData(0.01, "one cent")]
         [InlineData(100, "")]
         public void DecimalWordTest(decimal input, string expected)
@@ -57,6 +57,7 @@ namespace DotNetChallenge.Tests
         [Theory]
         [InlineData(123.4, " dollars")]
         [InlineData(1, " dollar")]
+        [InlineData(10000, " dollars")]
         [InlineData(0, "")]
         public void DollarWordTest(decimal input, string expected)
         {

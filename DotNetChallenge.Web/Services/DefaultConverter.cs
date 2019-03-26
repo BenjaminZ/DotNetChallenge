@@ -1,4 +1,7 @@
 using System;
+using DotNetChallenge.Web.Common;
+
+#pragma warning disable 1591
 
 namespace DotNetChallenge.Web.Services
 {
@@ -44,15 +47,14 @@ namespace DotNetChallenge.Web.Services
             var tens = value % 100;
             var tensWord = string.Empty;
             if (tens != 0) tensWord = $"{BelowHundred((int) tens)}";
+
             var hundred = value % 1000 - tens;
             var hundredWord = string.Empty;
             if (hundred != 0) hundredWord = $"{DigitWords((int) hundred / 100)} hundred";
 
             var andWord = string.Empty;
             var thousandWord = string.Empty;
-
             if (!string.IsNullOrEmpty(tensWord) && hundred != 0) andWord = " and ";
-
             // if this iteration is not the first, there is a thousand word
             if (count != 0) thousandWord = $" {((Thousands) count).ToString()}";
 
@@ -128,13 +130,13 @@ namespace DotNetChallenge.Web.Services
 
         public static string GetDollarWord(decimal amount)
         {
+            if (Math.Round(amount) == 0) return string.Empty;
+            
             var dollarDigit = (long) amount % 10;
             switch (dollarDigit)
             {
                 case 1:
                     return " dollar";
-                case 0:
-                    return string.Empty;
                 default:
                     return " dollars";
             }

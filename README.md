@@ -7,10 +7,18 @@ This is the .Net Challenge project.
 # Usage
 To run BE:
 
-```powershell
-cd .\DotNetChallenge.Web\
+```
+cd ./DotNetChallenge.Web
 dotnet restore
 dotnet run
+```
+
+To run FE:
+
+```
+cd ./DotNetChallenge.Web
+npm ci
+npm run start
 ```
 
 # About solution

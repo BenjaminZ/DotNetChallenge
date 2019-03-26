@@ -1,5 +1,4 @@
-namespace DotNetChallenge.Web.Common
-#pragma warning disable 1591
+namespace DotNetChallenge.Application.Common
 {
     public enum TensAboveTwenty
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using DotNetChallenge.Web.Services;
+using DotNetChallenge.Application.Services;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -58,6 +58,7 @@ namespace DotNetChallenge.Web
             else
                 app.UseHsts();
 
+            app.UseCors();
             app.UseHttpsRedirection();
             app.UseMvc();
             app.UseSwagger();

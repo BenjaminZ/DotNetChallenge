@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetChallenge.Web", "DotN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetChallenge.Tests", "DotNetChallenge.Tests\DotNetChallenge.Tests.csproj", "{20B89A55-8700-438A-A43F-61BDD859E14E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetChallenge.Application", "DotNetChallenge.Application\DotNetChallenge.Application.csproj", "{2073F0E8-CA44-4466-9F95-BD5B3F3E2053}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{30CB73F3-4048-44FA-8FD3-B8F9F576A4D8} = {51A86309-2319-4E5A-8AC0-A3CD15C9B1CD}
 		{20B89A55-8700-438A-A43F-61BDD859E14E} = {B9039985-9661-43F3-8F67-015FF372BD54}
+		{2073F0E8-CA44-4466-9F95-BD5B3F3E2053} = {51A86309-2319-4E5A-8AC0-A3CD15C9B1CD}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{30CB73F3-4048-44FA-8FD3-B8F9F576A4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +39,9 @@ Global
 		{20B89A55-8700-438A-A43F-61BDD859E14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B89A55-8700-438A-A43F-61BDD859E14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B89A55-8700-438A-A43F-61BDD859E14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2073F0E8-CA44-4466-9F95-BD5B3F3E2053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2073F0E8-CA44-4466-9F95-BD5B3F3E2053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2073F0E8-CA44-4466-9F95-BD5B3F3E2053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2073F0E8-CA44-4466-9F95-BD5B3F3E2053}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

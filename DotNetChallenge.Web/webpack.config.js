@@ -1,9 +1,12 @@
+'use strict';
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const {VueLoaderPlugin} = require('vue-loader');
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'assets/js/bundle.js'
@@ -11,6 +14,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({template: './src/index.html'}),
+        new VueLoaderPlugin()
     ],
     devServer: {
         host: 'localhost',
@@ -22,7 +26,16 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.vue$/,
+                loader: `vue-loader`
             }
         ]
     },
+    resolve: {
+        alias: {
+            'vue': 'vue/dist/vue.js'
+        }
+    }
 };

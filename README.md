@@ -22,8 +22,8 @@ dotnet run
 
 Url:
 ```
-http://localhost/5000/api/converion
-https://localhost/5001/api/converion
+http://localhost:5000/api/converion
+https://localhost:5001/api/converion
 ```
 
 ## FE
@@ -34,7 +34,7 @@ npm ci
 npm run start
 ```
 
-Url: `http://localhost/8080`
+Url: `http://localhost:8080`
 
 # About solution
 
@@ -46,7 +46,7 @@ Url: `http://localhost/8080`
 
 BE:
 
-* Swagger UI url: `https://localhost5001/swagger`. Library [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore).
+* Swagger UI url: `https://localhost:5001/swagger`. Library [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore).
 * [Fluent validation](https://fluentvalidation.net/). Used in `DotNetChallenge.Web.Validators`
 * [xUnit](https://xunit.github.io/) and [Fluent Assertions](https://fluentassertions.com/) for unit testing.
 

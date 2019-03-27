@@ -30,6 +30,14 @@ namespace DotNetChallenge.Web
                 // Fluent validation
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
 
+            services.AddCors(o => o.AddPolicy("All",
+                builder =>
+                {
+                    builder.AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowAnyOrigin();
+                }));
+
             services.AddRouting(options => { options.LowercaseUrls = true; });
             // DI
             services.AddSingleton<IConverter, DefaultConverter>();
@@ -58,7 +66,7 @@ namespace DotNetChallenge.Web
             else
                 app.UseHsts();
 
-            app.UseCors();
+            app.UseCors("All");
             app.UseHttpsRedirection();
             app.UseMvc();
             app.UseSwagger();

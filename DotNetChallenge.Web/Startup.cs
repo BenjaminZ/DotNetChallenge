@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using DotNetChallenge.Web.Services;
+using DotNetChallenge.Application.Services;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +29,14 @@ namespace DotNetChallenge.Web
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
                 // Fluent validation
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
+
+            services.AddCors(o => o.AddPolicy("All",
+                builder =>
+                {
+                    builder.AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowAnyOrigin();
+                }));
 
             services.AddRouting(options => { options.LowercaseUrls = true; });
             // DI
@@ -58,6 +66,7 @@ namespace DotNetChallenge.Web
             else
                 app.UseHsts();
 
+            app.UseCors("All");
             app.UseHttpsRedirection();
             app.UseMvc();
             app.UseSwagger();

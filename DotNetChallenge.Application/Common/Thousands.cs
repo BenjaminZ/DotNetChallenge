@@ -1,5 +1,4 @@
-#pragma warning disable 1591
-namespace DotNetChallenge.Web.Common
+namespace DotNetChallenge.Application.Common
 {
     public enum Thousands
     {

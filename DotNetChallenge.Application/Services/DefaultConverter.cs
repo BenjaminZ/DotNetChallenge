@@ -1,9 +1,7 @@
 using System;
-using DotNetChallenge.Web.Common;
+using DotNetChallenge.Application.Common;
 
-#pragma warning disable 1591
-
-namespace DotNetChallenge.Web.Services
+namespace DotNetChallenge.Application.Services
 {
     public class DefaultConverter : IConverter
     {

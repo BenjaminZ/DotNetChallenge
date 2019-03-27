@@ -1,4 +1,4 @@
-using DotNetChallenge.Web.Services;
+using DotNetChallenge.Application.Services;
 using FluentAssertions;
 using Xunit;
 

@@ -1,6 +1,6 @@
 ﻿using System;
+using DotNetChallenge.Application.Services;
 using DotNetChallenge.Web.Models;
-using DotNetChallenge.Web.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

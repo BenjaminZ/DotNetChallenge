@@ -10,6 +10,8 @@ This is the .Net Challenge project.
 # Usage
 BE and FE needs to run separately.
 
+**Cross platform**. Though only tested on Windows.
+
 ## BE
 
 ```
@@ -44,7 +46,7 @@ Url: `http://localhost/8080`
 
 BE:
 
-* Swagger UI url: `https://localhost5001/swagger`. Library [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle).
+* Swagger UI url: `https://localhost5001/swagger`. Library [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore).
 * [Fluent validation](https://fluentvalidation.net/). Used in `DotNetChallenge.Web.Validators`
 * [xUnit](https://xunit.github.io/) and [Fluent Assertions](https://fluentassertions.com/) for unit testing.
 

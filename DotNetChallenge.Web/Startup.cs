@@ -2,6 +2,7 @@
 using System.IO;
 using System.Reflection;
 using DotNetChallenge.Application.Services;
+using DotNetChallenge.Web.Validators;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,7 +29,7 @@ namespace DotNetChallenge.Web
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
                 // Fluent validation
-                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ConversionRequestValidator>());
 
             services.AddCors(o => o.AddPolicy("All",
                 builder =>

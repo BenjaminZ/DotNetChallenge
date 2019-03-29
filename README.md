@@ -18,6 +18,8 @@ BE and FE needs to run separately.
 
 ## BE
 
+In the solution root folder:
+
 ```
 dotnet restore
 cd ./DotNetChallenge.Web
@@ -27,10 +29,12 @@ dotnet run
 Url:
 ```
 http://localhost:5000/api/conversion
-https://localhost:5001/api/conversiion
+https://localhost:5001/api/conversion
 ```
 
 ## FE
+
+In the solution root folder:
 
 ```
 cd ./DotNetChallenge.Web

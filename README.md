@@ -8,17 +8,19 @@ This is the .Net Challenge project.
 * [Node.js](https://nodejs.org/en/download/package-manager/) ver 8.12.0 above
 
 # Usage
-BE and FE needs to run separately.
+BE and FE needs to run **in separated sessions**, e.g. multiple bash windows or in background.
 
 **Cross platform**. Though only tested on Windows.
 
 ## Cloning the repo
 
-`git clone` the repository to run the project. If it gives `permission denied` error, please clone via `htts` instead of `ssh`.
+```
+git clone https://github.com/BenjaminZ/DotNetChallenge.git
+```
 
 ## BE
 
-In the solution root folder:
+In the solution root folder `DotNetChallenge/`:
 
 ```
 dotnet restore

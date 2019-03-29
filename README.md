@@ -12,6 +12,10 @@ BE and FE needs to run separately.
 
 **Cross platform**. Though only tested on Windows.
 
+## Cloning the repo
+
+`git clone` the repository to run the project. If it gives `permission denied` error, please clone via `htts` instead of `ssh`.
+
 ## BE
 
 ```
@@ -22,8 +26,8 @@ dotnet run
 
 Url:
 ```
-http://localhost:5000/api/converion
-https://localhost:5001/api/converion
+http://localhost:5000/api/conversion
+https://localhost:5001/api/conversiion
 ```
 
 ## FE
